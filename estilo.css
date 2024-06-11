@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --laranja: #FA550B;
+    --azul: #0D4DFF;
+    --amarelo: #FFC10B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html {
+    font-family: 'poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+main {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--amarelo);
+    height: 70px;
+    z-index: 1;
+    position: fixed;
+}
+
+
+/* MENU */
+.menu {
+    width: 1000px;
+}
+.menu-links {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-links a {
+    transition: 0.2s;
+    color: var(--azul);
+    position: relative;
+    top: -30px;
+    margin: 50px;
+    width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+.menu-links a:hover {
+    color: var(--laranja);
+}
+.logo {
+    position: relative;
+    top: 40px;
+    height: 80px;
+}
+.logo img {
+    height: 100%;
+}
+
+
+/* BANNER */
+#banner {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.banner {
+    margin-top: 30px;
+    width: 1366px;
+    display: flex;
+}
+.banner-titulo, .banner-foto {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-titulo {
+    position: relative;
+    left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 25px;
+    line-height: 50px;
+}
+.banner-titulo span {
+    position: relative;
+    top: 5px;
+    right: 3px;
+    text-align: center;
+    color: var(--laranja);
+    font-size: 70px;
+    text-transform: uppercase;
+}
+.banner-foto img {
+    width: 80%;
+}
+.cadastro input, .cadastro button {
+    padding: 10px;
+    border: 2px solid var(--azul);
+    border-radius: 30px;
+}
+.cadastro input {
+    width: 250px;
+}
+.cadastro input::placeholder {
+    font-size: 15px;   
+}
+.cadastro button {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    background-color: var(--azul);
+    color: white;
+    
+}
+.cadastro button:hover {
+    background-color: var(--amarelo);
+    color: var(--azul);
+}
+
+
+/* SOBRE */
+#sobre {
+    text-align: center;
+    background-color: var(--azul);
+    padding: 50px;
+    border-radius: 30px;
+    position: relative;
+    top: -1px;
+}
+
+#sobre h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.descricao {
+    display: flex;
+}
+
+.bloco-descricao, .bloco-foto {
+    width: 50%;
+}
+.bloco-foto img {
+    width: 50%;
+    padding: 0px 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 5px solid var(--amarelo);
+}
+
+
+/* OPEN */
+.question-faq {
+    padding: 5px 0;
+    color: #fff;
+}
+.question-faq label {
+    width: 400px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.question-faq label::before {
+    content: '+';
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.content {
+    font-size: 14px;
+    width: 400px;
+    text-align: start;
+}
+
+.question-faq input[type="checkbox"] {
+    display: none;
+    position: relative;
+    bottom: 10px;
+}
+
+.question-faq .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.question-faq input[type="checkbox"]:checked + label + .content {
+    max-height: 150px;
+}
+.question-faq input[type="checkbox"]:checked + label::before {
+    rotate: 45deg;
+}
+
+.question-faq input[type="radio"] {
+    display: none;
+    position: relative;
+    bottom: 10px;
+}
+
+.question-faq .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+
+/* FUNCIONAMENTO */
+#funcionamento {
+    margin: 50px 0;
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#funcionamento h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.box-funcionamento {
+    display: flex;
+    justify-content: center;
+}
+
+.funcionamento-item {
+    width: calc(100%/3);
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.funcionamento-item p {
+    padding: 0 20px;
+}
+
+.funcionamento-imagem {
+    height: 100px;
+    margin: 20px;
+}
+.funcionamento-imagem img {
+    height: 100%;
+}
+
+
+/* VÍDEOS */
+#videos {
+    background-color: var(--azul);
+    padding: 50px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo {
+    color: white;
+    margin: 0px 50px;
+    font-size: 80px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titulo p {
+    margin: -20px;
+}
+
+iframe {
+    border-radius: 15px;
+}
+
+
+
+/* SOCIAL */
+#contatos {
+    margin: 50px;
+    display: flex;
+}
+
+.contato-form {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+.contato-form h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.social {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.social h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: black;
+}
+.imagem-social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.imagem-social-media p {
+    padding: 0 10px;
+}
+.social a img {
+    width: 35px;
+}
+
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: var(--amarelo);
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.assinatura {
+    text-align: center;
+}
