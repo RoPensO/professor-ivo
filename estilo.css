@@ -296,7 +296,7 @@ iframe {
 
 
 
-/* SOCIAL */
+/* FORUMARIO CONTATO */
 #contatos {
     margin: 50px;
     display: flex;
@@ -309,9 +309,13 @@ iframe {
 }
 .contato-form h1 {
     font-size: 40px;
+}
+.contato-form p {
     margin-bottom: 30px;
 }
 
+
+/* SOCIAL */
 .social {
     width: 25%;
     display: flex;
@@ -350,7 +354,19 @@ footer {
     align-items: center;
 }
 
+.menu-rodape .menu-links {
+    display: flex;
+}
+.menu-rodape .menu-links .logo {
+    position: relative;
+    top: 0;
+}
+
 
 .assinatura {
     text-align: center;
+}
+.assinatura p span {
+    font-weight: bold;
+    text-transform: uppercase;
 }
