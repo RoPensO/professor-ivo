@@ -11,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 html {
     font-family: 'poppins', sans-serif;
@@ -329,14 +330,12 @@ iframe {
     padding: 20px;
     margin: 0 10px;
     background-color: var(--laranja);
+    border-radius: 20px;
     color: white;
 }
 .box-descricao ul li {
     position: relative;
     left: 20px;
-}
-
-.box-preco {
 }
 
 
@@ -345,7 +344,6 @@ iframe {
     margin: 50px;
     display: flex;
 }
-
 .contato-form {
     width: 75%;
     margin: 0 auto;
