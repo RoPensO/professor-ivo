@@ -314,7 +314,7 @@ iframe {
 /* CURSO */
 #curso {
     width: 1024px;
-    padding: 30px;
+    padding: 30px 0;
 }
 #curso h1 {
     text-align: center;
@@ -326,16 +326,39 @@ iframe {
     justify-content: space-between;
 }
 .box-descricao , .box-preco {
+    height: 300px;
     width: 50%;
-    padding: 20px;
+    padding: 30px;
     margin: 0 10px;
     background-color: var(--laranja);
     border-radius: 20px;
     color: white;
 }
+.box-descricao > h2 {
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
 .box-descricao ul li {
     position: relative;
     left: 20px;
+}
+
+.box-preco {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.preco > h2 {
+    font-size: 60px;
+}
+.box-preco a {
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #fff;
+    color: var(--azul);
 }
 
 
@@ -354,6 +377,9 @@ iframe {
 }
 .contato-form p {
     margin-bottom: 30px;
+}
+.espaco-insta {
+    width: 300px;
 }
 
 
@@ -396,10 +422,13 @@ footer {
     align-items: center;
 }
 
-.menu-rodape .menu-links {
+.menu-rodape > .menu-links {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+}
+.menu-rodape > .menu-links a {
+    font-size: 15px;
 }
 .menu-rodape .menu-links .logo {
     position: relative;
