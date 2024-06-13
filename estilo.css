@@ -17,12 +17,24 @@ html {
 }
 a {
     text-decoration: none;
+    color: var(--azul);
 }
 main {
     width: 1024px;
     margin: 0 auto;
 }
 
+.botao-flutuante {
+    position: fixed;
+    z-index: 1;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+}
+.botao-flutuante img {
+    height: 100%;
+}
 
 /* HEADER */
 header {
@@ -41,6 +53,7 @@ header {
     width: 1000px;
 }
 .menu-links {
+    height: 100px;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -107,6 +120,9 @@ header {
 }
 .banner-foto img {
     width: 80%;
+}
+.cadastro {
+    display: none;
 }
 .cadastro input, .cadastro button {
     padding: 10px;
@@ -294,6 +310,34 @@ iframe {
     border-radius: 15px;
 }
 
+/* CURSO */
+#curso {
+    width: 1024px;
+    padding: 30px;
+}
+#curso h1 {
+    text-align: center;
+    margin: 30px 20px;
+}
+
+.box-curso {
+    display: flex;
+    justify-content: space-between;
+}
+.box-descricao , .box-preco {
+    width: 50%;
+    padding: 20px;
+    margin: 0 10px;
+    background-color: var(--laranja);
+    color: white;
+}
+.box-descricao ul li {
+    position: relative;
+    left: 20px;
+}
+
+.box-preco {
+}
 
 
 /* FORUMARIO CONTATO */
@@ -356,7 +400,8 @@ footer {
 
 .menu-rodape .menu-links {
     display: flex;
-    margin-bottom: -50px;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
 .menu-rodape .menu-links .logo {
     position: relative;
@@ -366,8 +411,19 @@ footer {
 
 .assinatura {
     text-align: center;
+    font-size: 13px;
 }
 .assinatura p span {
     font-weight: bold;
     text-transform: uppercase;
+}
+.assinatura p a {
+    font-weight: bold;
+}
+
+
+@media(max-width: 768px) {
+    .banner {
+        
+    }
 }
