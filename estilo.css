@@ -4,6 +4,7 @@
     --laranja: #FA550B;
     --azul: #0D4DFF;
     --amarelo: #FFC10B;
+    --brancomenosbranco: #dbebff;
 }
 
 * {
@@ -15,6 +16,7 @@
 }
 html {
     font-family: 'poppins', sans-serif;
+    background-color: var(--brancomenosbranco);
 }
 a {
     text-decoration: none;
@@ -39,7 +41,7 @@ main {
 .botao-flutuante img {
     height: 100%;
     position: relative;
-    bottom: 2px;
+    bottom: 1px;
 }
 
 /* HEADER */
@@ -294,10 +296,29 @@ header {
 #videos {
     background-color: var(--azul);
     padding: 50px;
-    border-radius: 30px;
+    border-radius: 30px 30px 0 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.box-video {
+    display: flex;
+}
+#videos > a {
+    color: var(--azul);
+    margin-top: 40px;
+    margin-bottom: -10px;
+    background-color: var(--amarelo);
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: bolder;
+    transition: 0.3s;
+    font-size: 22px;
+}
+#videos > a:hover {
+    background-color: var(--laranja);
+    color: white;
 }
 .titulo {
     color: white;
@@ -349,7 +370,9 @@ iframe {
     position: relative;
     left: 20px;
 }
-
+.box-valores {
+    display: none;
+}
 .box-preco {
     text-align: center;
     display: flex;
@@ -366,16 +389,47 @@ iframe {
     color: var(--azul);
 }
 
+.aviso-telegram {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aviso-telegram p {
+    font-size: 80px;
+    font-weight: bolder;
+    color: white;
+}
+.aviso-telegram a {
+    border-radius: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    width: 60%;
+    background-color: var(--amarelo);
+    color: var(--azul);
+    transition: 0.3s;
+}
+.aviso-telegram a:hover {
+    background-color: var(--azul);
+    color: white;
+}
+
 
 /* FORUMARIO CONTATO */
 #contatos {
-    margin: 50px;
+    color: white;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    background-color: var(--azul);
+    padding: 0 50px;
+    border-radius: 0 0 30px 30px;
 }
 .contato-form {
-    width: 75%;
-    margin: 0 auto;
     text-align: center;
+    width: 100%;
 }
 .contato-form h1 {
     font-size: 40px;
@@ -388,22 +442,34 @@ iframe {
     flex-direction: column;
     align-items: center;
 }
-.espaco-insta {
-    width: 300px;
+.insta {
+    display: flex;    
+    justify-content: space-between;
 }
+.espaco-insta-post, .espaco-insta-video {
+    width: 450px;
+    margin: 20px;
+}
+
 
 
 /* SOCIAL */
 .social {
-    width: 25%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    padding: 30px;
 }
 
 .social h1 {
     font-size: 40px;
     margin-bottom: 30px;
     color: black;
+    text-align: center;
+}
+.social-links {
+    display: flex;
+    justify-content: space-around;
 }
 .imagem-social-media {
     display: flex;
