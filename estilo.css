@@ -368,7 +368,7 @@ iframe {
     justify-content: space-between;
 }
 .box-descricao , .box-preco {
-    height: 300px;
+    min-height: 300px;
     width: 50%;
     padding: 30px;
     margin: 0 10px;
@@ -409,7 +409,7 @@ iframe {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -418,19 +418,46 @@ iframe {
     font-weight: bolder;
     color: white;
 }
-.aviso-telegram a {
+.aviso-telegram a , .cadastro-btn-enviar {
     border-radius: 30px;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
-    width: 60%;
+    padding: 10px 30px;
     background-color: var(--amarelo);
     color: var(--azul);
     transition: 0.3s;
 }
-.aviso-telegram a:hover {
+.aviso-telegram a:hover, .cadastro-btn-enviar:hover {
     background-color: var(--azul);
     color: white;
 }
+.cadastro-btn-enviar {
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-family: "poppins";
+}
+.cadastro-texto {
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    margin: 10px;
+}
+.cadastro-texto::placeholder {
+    font-size: 15px;
+    padding-left: 5px;
+    font-family: 'poppins';
+}
+form label {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
 
 
 /* FORUMARIO CONTATO */
@@ -545,7 +572,6 @@ footer {
 .assinatura p a {
     font-weight: bold;
 }
-
 
 @media(max-width: 768px) {
     .banner {
