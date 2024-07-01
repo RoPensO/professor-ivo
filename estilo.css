@@ -126,6 +126,22 @@ header {
     font-size: 70px;
     text-transform: uppercase;
 }
+.banner-titulo > a {
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 5px 30px;
+    background-color: var(--azul);
+    color: var(--amarelo);
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+.banner-titulo > a:hover {
+    background-color: var(--amarelo);
+    color: var(--azul);
+}
+
 .banner-foto img {
     width: 80%;
 }
@@ -471,6 +487,12 @@ iframe {
     display: flex;
     justify-content: space-around;
 }
+.social-links a {
+    transition: 0.3s;
+}
+.social-links a:hover {
+    color: var(--laranja);
+}
 .imagem-social-media {
     display: flex;
     flex-direction: row;
@@ -529,4 +551,10 @@ footer {
     .banner {
         
     }
+}
+
+
+
+iframe {
+    
 }
