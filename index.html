@@ -64,8 +64,11 @@
                             <form action="https://api.sheetmonkey.io/form/4yp3mgpxrQ3tWqBzcGTRQb" method="post">
                                 <!-- Put HTML input fields in here and see how they fill up your sheet -->
                                 <label>Cadastre-se para receber as novidades!</label>
-                                <input class="cadastro-texto" type="text" placeholder="Digite seu nome" name="NOME" required />
-                                <input class="cadastro-texto" type="text" placeholder="Digite seu email" name="EMAIL" required />
+                                <div class="campos-cadastro">
+                                    <input class="cadastro-texto" type="text" placeholder="Digite seu nome" name="NOME" required />
+                                    <input class="cadastro-texto" type="email" placeholder="Digite seu email" name="EMAIL" required />
+                                    <input class="cadastro-texto" type="tel" placeholder="Digite telefone com ddd" name="EMAIL" required />
+                                </div>
                                 <input class="cadastro-btn-enviar" type="submit" value="Cadastrar" />
                               </form>
                         </div>
