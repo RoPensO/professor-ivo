@@ -93,7 +93,8 @@ header {
 
 /* BANNER */
 #banner {
-    padding-top: 100px;
+    padding-top: 80px;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -361,7 +362,7 @@ iframe {
 #curso h1 {
     font-size: 30px;
     text-align: center;
-    margin: 30px 20px;
+    margin-bottom: 30px;
 }
 
 .box-curso {
@@ -576,13 +577,7 @@ footer {
 }
 
 @media(max-width: 768px) {
-    .banner {
-        
+    .menu-links {
+        width: 100%;
     }
-}
-
-
-
-iframe {
-    
 }
