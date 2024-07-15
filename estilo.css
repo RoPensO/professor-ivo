@@ -157,6 +157,8 @@ form {
 }
 form h1 {
     color: white;
+    font-size: 25px;
+    line-height: 40px;
 }
 
 .banner-foto img {
@@ -587,6 +589,9 @@ form label {
     width: 40%;
     text-align: center;
     background-color: var(--laranja);
+}
+.formulario-social > form .cadastro-btn-enviar:hover {
+    background-color: var(--azul);
 }
 
 
