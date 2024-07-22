@@ -476,7 +476,10 @@ iframe {
     transition: 0.3s;
     font-size: 22px;
 }
-
+.insta > a:hover {
+    background-color: var(--laranja);
+    color: white;
+}
 
 
 /* SOCIAL */
@@ -530,6 +533,10 @@ iframe {
 .duvidas a {
     font-size: 22px;
     font-weight: bold;
+    transition: 0.3s;
+}
+.duvidas a:hover {
+    color: var(--laranja);
 }
 
 /* FORMULARIO FINAL */
