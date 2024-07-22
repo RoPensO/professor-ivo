@@ -27,6 +27,7 @@ main {
     margin: 0 auto;
 }
 
+/* BOTÃO FLUTUANTE */
 .botao-flutuante {
     background-color: var(--azul);
     position: fixed;
@@ -42,6 +43,21 @@ main {
     height: 100%;
     position: relative;
     bottom: 1px;
+}
+
+/* BOTÕES */
+.botao {
+    min-width: 300px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-family: "poppins";
+    transition: 0.3s;
+    margin: 30px 0;
 }
 
 /* HEADER */
@@ -90,301 +106,165 @@ header {
     height: 100%;
 }
 
+/* MAIN */
+
+/* PRÉ BANNER */
+.pre-banner {
+    padding: 120px 80px 50px;
+    border-radius: 30px;
+    background-color: white;
+}
+.pre-banner h1, .pre-banner p {
+    text-align: center;
+}
+.pre-banner p {
+    padding: 30px;
+}
 
 /* BANNER */
-#banner {
-    padding-top: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 .banner {
     margin-top: 30px;
-    width: 1366px;
+    width: 100%;
     display: flex;
 }
 .banner-titulo, .banner-foto {
     width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.banner-titulo {
-    position: relative;
+
+/* FORMULARIO */
+.formulario, .formulario-social {
+    background-color: var(--azul);
+    border-radius: 30px;
+    padding: 30px;
+}
+
+form { 
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    font-size: 25px;
-    line-height: 50px;
+    justify-content: space-between;
 }
-.banner-titulo span {
-    position: relative;
-    top: 5px;
-    right: 3px;
+form label {
     text-align: center;
-    color: var(--laranja);
-    font-size: 70px;
-    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 45px;
+    line-height: 40px;
 }
-.banner-titulo > a {
-    margin-top: 30px;
-    font-size: 20px;
-    padding: 5px 30px;
-    background-color: var(--azul);
-    color: var(--amarelo);
-    border-radius: 50px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transition: 0.3s;
+form label p {
+    font-size: 22px;
 }
-.banner-titulo > a:hover {
+
+/* CAMPO CADASTRO */
+.cadastro-texto {
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.cadastro-texto::placeholder {
+    font-size: 15px;
+    padding-left: 5px;
+    font-family: 'poppins';
+}
+
+/* BOTÃO CADASTRO BANNER */
+.btn-cadstro-banner {
     background-color: var(--amarelo);
     color: var(--azul);
 }
-
-.formulario, .formulario-social {
-    padding: 30px;
-    border-radius: 20px;
-}
-.formulario {
-    background-color: var(--azul);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-form h1 {
+.btn-cadstro-banner:hover {
+    background-color: var(--laranja);
     color: white;
-    font-size: 25px;
-    line-height: 40px;
 }
 
+/* BANNER IMAGEM */
 .banner-foto img {
     width: 100%;
 }
-.cadastro {
-    display: none;
-}
-.cadastro input, .cadastro button {
-    padding: 10px;
-    border: 2px solid var(--azul);
-    border-radius: 30px;
-}
-.cadastro input {
-    width: 250px;
-}
-.cadastro input::placeholder {
-    font-size: 15px;   
-}
-.cadastro button {
-    padding: 10px;
-    font-size: 15px;
-    font-weight: bolder;
-    transition: 0.3s;
-    cursor: pointer;
-    border: none;
-    background-color: var(--azul);
-    color: white;
-    
-}
-.cadastro button:hover {
-    background-color: var(--amarelo);
-    color: var(--azul);
+
+
+/* SEPARADOR */
+.separador h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 40px 0;
+    text-transform: uppercase;
 }
 
 
 /* SOBRE */
 #sobre {
-    text-align: center;
+    color: white;
     background-color: var(--azul);
     padding: 50px;
     border-radius: 30px;
-    position: relative;
-    top: -1px;
 }
-
 #sobre h1 {
+    text-align: center;
     color: white;
     font-size: 40px;
     margin-bottom: 30px;
 }
-
 .descricao {
     display: flex;
+    align-items: start;
+    width: 100%;
 }
-
 .bloco-descricao, .bloco-foto {
     width: 50%;
+    text-align: center;
 }
 .bloco-foto img {
-    width: 50%;
+    width: 55%;
     padding: 0px 10px;
     background-color: #fff;
     border-radius: 20px;
     border: 5px solid var(--amarelo);
 }
-
-
-/* OPEN */
-.question-faq {
-    padding: 5px 0;
-    color: #fff;
+.bloco-descricao {
+    padding-right: 40px;
 }
-.question-faq label {
-    width: 400px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-.question-faq label::before {
-    content: '+';
-    font-size: 25px;
-    font-weight: bold;
-    transition: 0.2s ease-in-out;
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-}
-.content {
-    font-size: 14px;
-    width: 400px;
-    text-align: start;
-}
-
-.question-faq input[type="checkbox"] {
-    display: none;
-    position: relative;
-    bottom: 10px;
-}
-
-.question-faq .content {
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.5s ease-in-out;
-}
-
-.question-faq input[type="checkbox"]:checked + label + .content {
-    max-height: 150px;
-}
-.question-faq input[type="checkbox"]:checked + label::before {
-    rotate: 45deg;
-}
-
-.question-faq input[type="radio"] {
-    display: none;
-    position: relative;
-    bottom: 10px;
-}
-
-.question-faq .content {
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.5s ease-in-out;
+.bloco-descricao p {
+    text-align: justify;
 }
 
 
-/* FUNCIONAMENTO */
-#funcionamento {
-    margin: 50px 0;
-    width: 1024px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-}
-
-#funcionamento h1 {
-    font-size: 30px;
-    margin-bottom: 30px;
+/* SEPARADOR - frase damasco */
+.frase-damasco {
+    margin-top: 30px;
     color: black;
-}
-
-.box-funcionamento {
-    display: flex;
-    justify-content: center;
-}
-
-.funcionamento-item {
-    width: calc(100%/3);
-    margin: 10px;
-    border-radius: 15px;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 15px;
-    transition: 0.2s;
 }
-.funcionamento-item:hover {
-    background-color: var(--laranja);
-    color: white;
+.frase-damasco h1 {
+    font-size: 40px;
+    line-height: 45px;
 }
-.funcionamento-item p {
-    padding: 0 20px;
-}
-
-.funcionamento-imagem {
-    height: 100px;
-    margin: 20px;
-}
-.funcionamento-imagem img {
-    height: 100%;
+.frase-damasco span {
+    position: relative;
+    top: 8px;
+    right: 3px;
+    text-align: center;
+    color: var(--laranja);
+    font-size: 75px;
+    text-transform: uppercase;
 }
 
-
-/* VÍDEOS */
-#videos {
-    background-color: var(--azul);
-    padding: 50px;
-    border-radius: 30px 30px 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.box-video {
-    display: flex;
-}
-#videos > a {
-    color: var(--azul);
-    margin-top: 40px;
-    margin-bottom: -10px;
-    background-color: var(--amarelo);
-    padding: 10px 30px;
-    border-radius: 30px;
-    font-weight: bolder;
-    transition: 0.3s;
-    font-size: 22px;
-}
-#videos > a:hover {
-    background-color: var(--laranja);
-    color: white;
-}
-.titulo {
-    color: white;
-    margin: 0px 50px;
-    font-size: 80px;
-    font-weight: bolder;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.titulo p {
-    margin: -20px;
-}
-
-iframe {
-    border-radius: 15px;
-}
 
 /* CURSO */
 #curso {
     width: 1024px;
     padding: 30px 0px;
 }
-#curso h1 {
-    font-size: 30px;
+
+#curso h2 {
+    text-transform: uppercase;
+    font-size: 25px;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -394,7 +274,6 @@ iframe {
     justify-content: space-between;
 }
 .box-descricao , .box-preco {
-    min-height: 300px;
     width: 50%;
     padding: 30px;
     margin: 0 10px;
@@ -411,6 +290,17 @@ iframe {
 .box-descricao ul li {
     position: relative;
     left: 20px;
+}
+.box-descricao ul {
+    margin-bottom: 30px;
+}
+.box-descricao > a {
+    background-color: var(--azul);
+    color: white;
+}
+.box-descricao > a:hover {
+    background-color: var(--amarelo);
+    color: var(--azul);
 }
 .box-valores {
     display: none;
@@ -444,51 +334,105 @@ iframe {
     font-weight: bolder;
     color: white;
 }
-.aviso-telegram a , .cadastro-btn-enviar {
-    border-radius: 30px;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 30px;
-    background-color: var(--amarelo);
-    color: var(--azul);
-    transition: 0.3s;
+
+/* FUNCIONAMENTO */
+#funcionamento {
+    margin: 50px 0;
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
 }
-.aviso-telegram a:hover, .cadastro-btn-enviar:hover {
+#funcionamento h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.box-funcionamento {
+    display: flex;
+    justify-content: center;
+}
+
+.funcionamento-item {
+    width: calc(100%/3);
+    margin: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    transition: 0.2s;
+}
+.funcionamento-item:hover {
+    background-color: var(--laranja);
+    color: white;
+    cursor: pointer;
+}
+.funcionamento-item p {
+    padding: 0 20px;
+}
+
+.funcionamento-imagem {
+    height: 100px;
+    margin: 20px;
+}
+.funcionamento-imagem img {
+    height: 100%;
+}
+
+
+/* VÍDEOS */
+#videos {
+    background-color: var(--azul);
+    padding: 50px;
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#videos > h2 {
+    font-size: 60px;
+    color: white;
+    margin-bottom: 30px;
+}
+#videos > a {
+    color: var(--azul);
+    margin-top: 40px;
+    margin-bottom: -10px;
+    background-color: var(--amarelo);
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: bolder;
+    transition: 0.3s;
+    font-size: 22px;
+}
+#videos > a:hover {
     background-color: var(--laranja);
     color: white;
 }
-.cadastro-btn-enviar {
-    cursor: pointer;
-    border: none;
-    font-weight: bold;
-    font-family: "poppins";
-    margin-top: 10px;
-}
-.cadastro-texto {
-    padding: 10px;
-    border-radius: 30px;
-    border: none;
-    margin-bottom: 10px;
-    width: 100%;
-}
-.cadastro-texto::placeholder {
-    font-size: 15px;
-    padding-left: 5px;
-    font-family: 'poppins';
-}
-form label {
-    font-size: 18px;
+.titulo {
     color: white;
+    margin: 0px 50px;
+    font-size: 80px;
+    font-weight: bolder;
     display: flex;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin-top: 15px;
+    flex-direction: column;
+    justify-content: center;
+}
+.titulo p {
+    margin: -20px;
+}
+
+iframe {
+    border-radius: 15px;
 }
 
 
-
-/* FORUMARIO CONTATO */
-#contatos {
+/* VEJA MAIS */
+#veja-mais {
     color: white;
     width: 100%;
     display: flex;
@@ -513,12 +457,24 @@ form label {
     align-items: center;
 }
 .insta {
-    display: flex;    
-    justify-content: space-between;
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
 }
 .espaco-insta-post, .espaco-insta-video {
     width: 450px;
     margin: 20px;
+}
+.insta > a {
+    width: 300px;
+    margin-top: -10px;
+    color: var(--azul);
+    background-color: var(--amarelo);
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: bolder;
+    transition: 0.3s;
+    font-size: 22px;
 }
 
 
@@ -533,31 +489,11 @@ form label {
     width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 30px;
 }
-
-.social h1 {
-    font-size: 40px;
-    margin-bottom: 30px;
-    color: black;
-    text-align: center;
-}
-
-.social h1 {
-    display: flex;
-    flex-direction: column;
-    font-size: 40px;
-    line-height: 35px;
-}
-.social h1 span {
-    position: relative;
-    top: 20px;
-    right: 3px;
-    text-align: center;
-    color: var(--laranja);
-    font-size: 70px;
-    text-transform: uppercase;
+.social > .frase-damasco {
+    margin-top: 0px;
 }
 .social-links {
     display: flex;
@@ -585,13 +521,39 @@ form label {
     width: 35px;
 }
 
-.formulario-social {
-    width: 40%;
+.duvidas {
     text-align: center;
-    background-color: var(--laranja);
 }
-.formulario-social > form .cadastro-btn-enviar:hover {
+.duvidas p {
+    font-size: 20px;
+}
+.duvidas a {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* FORMULARIO FINAL */
+.formulario-social {
+    width: 45%;
+    background-color: var(--laranja);
+    color: white;
+    text-align: center;
+}
+.formulario-social p {
+    font-size: 22px;
+}
+.formulario-social form p {
+    margin: 10px 0;
+}
+.cadastro-btn-enviar {
     background-color: var(--azul);
+    color: white;
+    margin-top: 20px;
+    margin-bottom: -5px;
+}
+.cadastro-btn-enviar:hover {
+    background-color: var(--amarelo);
+    color: var(--azul);
 }
 
 
@@ -608,14 +570,14 @@ footer {
 .menu-rodape > .menu-links {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .menu-rodape > .menu-links a {
     font-size: 15px;
 }
 .menu-rodape .menu-links .logo {
     position: relative;
-    top: 0;
+    top: -30px;
 }
 
 
@@ -629,10 +591,4 @@ footer {
 }
 .assinatura p a {
     font-weight: bold;
-}
-
-@media(max-width: 768px) {
-    .menu-links {
-        width: 100%;
-    }
 }
