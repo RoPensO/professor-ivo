@@ -126,8 +126,8 @@ header {
 }
 .pre-banner p {
     padding: 30px;
-    font-size: 18px;
-    padding: 30px 80px;
+    font-size: 16px;
+    padding: 30px 50px;
 }
 .pre-banner span {
     color: var(--amarelo);
@@ -168,7 +168,9 @@ form label {
     line-height: 40px;
 }
 form label p {
-    font-size: 22px;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 /* CAMPO CADASTRO */
