@@ -126,6 +126,11 @@ header {
 .pre-banner p {
     padding: 30px;
     font-size: 18px;
+    padding: 30px 80px;
+}
+.pre-banner span {
+    color: var(--amarelo);
+    font-weight: bold;
 }
 
 /* BANNER */
