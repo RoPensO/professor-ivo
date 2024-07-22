@@ -68,7 +68,8 @@ header {
     background-color: var(--amarelo);
     height: 70px;
     z-index: 1;
-    position: fixed;
+    position: sticky;
+    top: 0;
 }
 
 
@@ -110,19 +111,26 @@ header {
 
 /* PRÉ BANNER */
 .pre-banner {
-    padding: 120px 80px 50px;
+    margin-top: 30px;
+    padding: 50px;
     border-radius: 30px;
-    background-color: white;
+    background-color: var(--laranja);
+    color: white;
 }
 .pre-banner h1, .pre-banner p {
     text-align: center;
 }
+.pre-banner h1 {
+    font-size: 50px;
+}
 .pre-banner p {
     padding: 30px;
+    font-size: 18px;
 }
 
 /* BANNER */
 .banner {
+    width: 100%;
     margin-top: 30px;
     width: 100%;
     display: flex;
@@ -599,3 +607,4 @@ footer {
 .assinatura p a {
     font-weight: bold;
 }
+
