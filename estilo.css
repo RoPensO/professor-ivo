@@ -281,7 +281,7 @@ form label p {
 
 /* CURSO */
 #curso {
-    width: 1024px;
+    width: 100%;
     padding: 30px 0px;
 }
 #curso h2 {
