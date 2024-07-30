@@ -677,21 +677,3 @@ footer {
     }
 }
 
-@media (max-width: 767px), (min-width: 540px) {
-    main {
-        width: 540px;
-        padding: 0px 5px;
-    }
-    .pre-banner{
-        padding: 10px;
-    }
-    .pre-banner p {
-        padding: 30px;
-    }
-    .banner {
-        flex-direction: column-reverse
-    }
-    .banner-foto, .banner-titulo {
-        width: 100%;
-    }
-}
