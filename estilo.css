@@ -241,6 +241,10 @@ form label p {
     width: 50%;
     text-align: center;
 }
+.bloco-foto {
+    display: flex;
+    justify-content: center;
+}
 .bloco-foto img {
     width: 55%;
     padding: 0px 10px;
@@ -621,4 +625,73 @@ footer {
 }
 .assinatura p a {
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .menu-links a {
+        margin: auto;
+        padding: 50px 0;
+    }
+    main {
+        width: 768px;
+        padding: 0px 5px;
+    }
+    .descricao {
+        width: 100%;
+        flex-direction: column;
+    }
+    #sobre {
+        justify-content: center;
+    }
+    .bloco-descricao {
+        width: 100%;
+        padding: 0;
+    }
+    .bloco-foto {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .bloco-foto img {
+        width: 40%;
+
+    }
+    #funcionamento {
+        width: 768px;
+    }
+
+    .box-funcionamento, .social-links {
+        flex-wrap: wrap;
+    }
+    .social-links {
+        margin: 20px 0;
+    }
+    #social {
+        flex-direction: column;
+        align-items: center;
+    }
+    .social {
+        width: 100%;
+    }
+    .formulario-social {
+        width: 70%;
+    }
+}
+
+@media (max-width: 767px), (min-width: 540px) {
+    main {
+        width: 540px;
+        padding: 0px 5px;
+    }
+    .pre-banner{
+        padding: 10px;
+    }
+    .pre-banner p {
+        padding: 30px;
+    }
+    .banner {
+        flex-direction: column-reverse
+    }
+    .banner-foto, .banner-titulo {
+        width: 100%;
+    }
 }
