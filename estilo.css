@@ -22,28 +22,39 @@ a {
     text-decoration: none;
     color: var(--azul);
 }
-main {
+.limitador {
     width: 1024px;
     margin: 0 auto;
 }
 
 /* BOTÃO FLUTUANTE */
 .botao-flutuante {
+    cursor: pointer;
     background-color: var(--azul);
+    font-weight: bold;
     position: fixed;
     z-index: 1;
     bottom: 20px;
-    right: 20px;
+    right: 10px;
     height: 50px;
-    width: 50px;
+    width: auto;
     padding: 10px;
-    border-radius: 50%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.botao-flutuante img {
+.botao-flutuante a {
+    color: var(--amarelo);
+}
+.botao-flutuante:hover {
+    background-color: var(--laranja);
+}
+/* .botao-flutuante img {
     height: 100%;
     position: relative;
     bottom: 1px;
-}
+} */
 
 /* BOTÕES */
 .botao {
@@ -61,7 +72,7 @@ main {
     text-align: center;
 }
 
-        /* HEADER */
+    /* HEADER */
 header {
     width: 100%;
     display: flex;
@@ -108,13 +119,12 @@ header {
     height: 100%;
 }
 
-        /* MAIN */
+    /* MAIN */
 
 /* PRÉ BANNER */
 .pre-banner {
+    width: 100vw;
     margin: 50px 0;
-    padding: 50px;
-    border-radius: 30px;
     background-color: var(--azul);
     color: white;
 }
@@ -122,18 +132,18 @@ header {
     text-align: center;
 }
 .pre-banner h1 {
-    font-size: 50px;
+    font-size: 40px;
     text-decoration: underline;
 }
 .pre-banner p {
     padding: 30px;
     text-align: justify;
-    font-size: 22px;
+    font-size: 18px;
     padding: 30px 50px;
     line-height: 25px;
 }
 .pre-banner h3 {
-    font-size: 40px;
+    font-size: 30px;
     margin: -15px 0;
 }
 .pre-banner span {
@@ -299,7 +309,7 @@ form label p {
     justify-content: space-between;
 }
 .box-descricao {
-    width: 100%;
+    
     padding: 30px;
     margin: 0 10px;
     background-color: var(--laranja);
@@ -366,7 +376,7 @@ form label p {
 
 /* FUNCIONAMENTO */
 #funcionamento {
-    margin: 50px 0;
+    margin: 50px auto;
     width: 1024px;
     display: flex;
     flex-direction: column;
@@ -463,7 +473,7 @@ iframe {
 /* VEJA MAIS */
 #veja-mais {
     color: white;
-    width: 100%;
+    
     display: flex;
     flex-direction: column;
     background-color: var(--azul);
@@ -490,9 +500,11 @@ iframe {
     flex-direction: column;
     align-items: center;
 }
-.espaco-insta-post, .espaco-insta-video {
-    width: 450px;
-    margin: 20px;
+.espaco-insta-post {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    margin: 20px 30px;
 }
 .insta > a {
     width: 300px;
@@ -515,10 +527,9 @@ iframe {
 #social {
     display: flex;
     flex-direction: row;
-    margin: 30px 0;
+    margin: 30px auto;
 }
 .social {
-    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
