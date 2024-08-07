@@ -27,6 +27,8 @@ a {
     margin: 0 auto;
 }
 
+
+
 /* BOTÃO FLUTUANTE */
 .botao-flutuante {
     cursor: pointer;
@@ -221,6 +223,16 @@ form label p {
 }
 
 /* BANNER IMAGEM */
+.banner-foto {
+    position: relative;
+}
+.selo-desconto {
+    top: -30px;
+    right: 0px;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+}
 .banner-foto img {
     width: 100%;
 }
