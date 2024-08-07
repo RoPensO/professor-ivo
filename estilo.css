@@ -4,7 +4,7 @@
     --laranja: #FA550B;
     --azul: #0D4DFF;
     --amarelo: #FFC10B;
-    --brancomenosbranco: #dbebff;
+    --brancomenosbranco: #cee2fb;
 }
 
 * {
@@ -123,8 +123,9 @@ header {
 
 /* PRÉ BANNER */
 .pre-banner {
-    width: 100vw;
-    margin: 50px 0;
+    width: 100%;
+    margin: 50px auto;
+    padding: 30px 0;
     background-color: var(--azul);
     color: white;
 }
@@ -136,15 +137,13 @@ header {
     text-decoration: underline;
 }
 .pre-banner p {
-    padding: 30px;
     text-align: justify;
     font-size: 18px;
-    padding: 30px 50px;
-    line-height: 25px;
+    padding: 30px;
 }
 .pre-banner h3 {
     font-size: 30px;
-    margin: -15px 0;
+    margin: auto;
 }
 .pre-banner span {
     color: var(--amarelo);
@@ -157,6 +156,7 @@ header {
     margin-top: 30px;
     width: 100%;
     display: flex;
+    align-items: flex-end;
 }
 .banner-titulo, .banner-foto {
     width: 50%;
@@ -191,11 +191,17 @@ form label p {
 }
 
 /* CAMPO CADASTRO */
+.campos-cadastro label {
+    padding-left: 15px;
+    margin-bottom: -5px;
+    text-align: start;
+    font-size: 20px;
+}
 .cadastro-texto {
     padding: 10px;
     border-radius: 30px;
     border: none;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     width: 100%;
 }
 .cadastro-texto::placeholder {
@@ -376,6 +382,8 @@ form label p {
 
 /* FUNCIONAMENTO */
 #funcionamento {
+    background-color: var(--azul);
+    border-radius: 30px;
     margin: 50px auto;
     width: 1024px;
     display: flex;
@@ -385,8 +393,8 @@ form label p {
 }
 #funcionamento h1 {
     font-size: 30px;
-    margin-bottom: 30px;
-    color: black;
+    margin: 30px 0 0px;
+    color: white;
 }
 
 .box-funcionamento {
@@ -395,9 +403,10 @@ form label p {
 }
 
 .funcionamento-item {
+    color: white;
     width: calc(100%/3);
     margin: 10px;
-    border-radius: 15px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -629,6 +638,7 @@ footer {
 .assinatura {
     text-align: center;
     font-size: 13px;
+    padding-top: 30px;
 }
 .assinatura p span {
     font-weight: bold;
@@ -688,7 +698,7 @@ footer {
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 425px) {
     main {
         width: 540px;
         padding: 0px 5px;

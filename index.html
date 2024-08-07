@@ -29,7 +29,7 @@
 </head>
 <body>
     
-    <header>
+    <!-- <header>
         <div class="menu topo">
             <div class="menu-links">
                 <a href="#sobre">Sobre</a>
@@ -41,7 +41,7 @@
                 <a href="#veja-mais">Veja mais</a>
             </div>
         </div>
-    </header>
+    </header> -->
 
     <main>
 
@@ -51,16 +51,20 @@
             <!-- <a href="#"><img src="imagens/up-arrow.png" alt="voltar ao topo"></a> -->
         </section>
 
-        <section class="pre-banner">
+        <!-- <section class="pre-banner">
             <div class="bloco-pre-banner limitador">
-                <h1>GUIA DEEFINIFIVO DE HISTÓRIA <br>PARA ENEM E VESTIBULAR</h1>
-            <p>Já imaginou um <span>curso de história completo</span> para ser <span>aprovado</span> naquela prova tão aguardada? <span>Em breve</span> o curso do Professor Ivo estará disponível para você! <span>Não perca tempo</span> e <span>cadastre-se</span> para entrar no nosso <span>grupo do telegram</span> e receber o <span>desconto incrível de pré-lançamento do curso</span>.</p>
+            <h1>GUIA DEEFINIFIVO DE HISTÓRIA <br>PARA ENEM E VESTIBULAR</h1>
+            <p class="limitador">Já imaginou um <span>curso de história completo</span> para ser <span>aprovado</span> naquela prova tão aguardada? <span>Em breve</span> o curso do Professor Ivo estará disponível para você! <span>Não perca tempo</span> e <span>cadastre-se</span> para entrar no nosso <span>grupo do telegram</span> e receber o <span>desconto incrível de pré-lançamento do curso</span>.</p>
             
             <h3><span>E TEM MAIS, MOÇADA!</span></h3>
             
             <p>Quem estiver no nosso grupo do Telegram vai ter <span>acesso a descontos e promoções exclusivas</span>. NÃO FIQUE DE FORA DESSA E GARANTA SEU <span>DESCONTO DE PRÉ-LANÇAMENTO</span> DO CURSO MAIS ESPERADO PELOS <span>VESTIBULANDOS</span> E <span>CONCURSEIROS</span>!</p>
             </div>
-        </section>
+        </section> -->
+
+        <div class="separador limitador">
+            <h1>Aqui você aprende história de verdade!</h1>
+        </div>
 
         <section id="banner" class="limitador">
             <div class="banner">
@@ -68,11 +72,14 @@
                     <div class="formulario">
                         <form action="https://api.sheetmonkey.io/form/4yp3mgpxrQ3tWqBzcGTRQb" method="post">
                             <!-- formulário que vai para a tabela de cadastro -->
-                            <label>QUER DESCONTO? <br><p>CADASTRE-SE AQUI E NÃO PERCA TEMPO E APROVEITE AS VANTAGENS NO TELEGRAM!</p></label>
+                            <label>GARANTA SUA OFERTA EXCLUSIVA! <br><p>CADASTRE-SE AQUI, NÃO PERCA TEMPO E APROVEITE AS VANTAGENS!</p></label>
                             <div class="campos-cadastro">
-                                <input class="cadastro-texto" type="text" placeholder="Seu nome*" name="NOME" required />
-                                <input class="cadastro-texto" type="email" placeholder="Seu email*" name="EMAIL" required />
-                                <input class="cadastro-texto" type="tel" placeholder="Telefone com ddd (opcional)" name="TELEFONE" />
+                                <label for="nome">Seu nome*</label>
+                                <input class="cadastro-texto" type="text" placeholder="digite seu nome" name="NOME" required />
+                                <label for="nome">Seu email*</label>
+                                <input class="cadastro-texto" type="email" placeholder="digite seu email" name="EMAIL" required />
+                                <label for="nome">Seu telefone(opcional)</label>
+                                <input class="cadastro-texto" type="tel" placeholder="Telefone com ddd" name="TELEFONE" />
                             </div>
                             <input class="btn-cadstro-banner botao" type="submit" value="Cadastrar" />
                           </form>
@@ -80,16 +87,18 @@
                 </div>
 
                 <div class="banner-foto">
-                    <img src="imagens/ivo banner.png" alt="vai um damasco aí?">
+                    <div class="foto">
+                        <img src="imagens/ivo banner.png" alt="vai um damasco aí?">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <div class="separador limitador">
+        <!-- <div class="separador limitador">
             <h1>Aqui você aprende história de verdade!</h1>
-        </div>
+        </div> -->
 
-        <section id="sobre" class="limitador">
+        <!-- <section id="sobre" class="limitador">
             <h1>Sobre o Professor Ivo Marcos</h1>
             <div class="descricao">
                 <div class="bloco-foto">
@@ -99,16 +108,16 @@
                     <p>Ivo Marcos é um experiente professor e pesquisador com mais de 42 anos de carreira, focado no ENEM e na orientação de alunos para vestibulares. Reconhecido por sua responsabilidade e carinho pelos alunos, lecionou para mais de 6 mil estudantes em instituições de prestígio no Paraná. Ele visitou museus e locais históricos importantes mundialmente e no Brasil, aprofundando seus conhecimentos em História. Sua dedicação à ciência da História, pesquisa e magistério faz dele uma figura respeitada em Curitiba.</p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <div class="separador limitador">
+        <!-- <div class="separador limitador">
 
             <div class="frase-damasco">
                 <h1>Estudar história não é <br><span>damasco</span><br> mas é uma delícia!</h1>
             </div>
-        </div>
+        </div> -->
         
-        <section id="curso" class="limitador">
+        <!-- <section id="curso" class="limitador">
             <h2>EM BREVE TEREMOS NOSSO CURSO MAS ENQUANTO ISSO:</h2>
             <div class="box-curso limitador">
                 <div class="box-descricao limitador">
@@ -118,32 +127,17 @@
                         <li> Conteúdos de história breve e objetivos, além de dicas de estudo
                         <li> Assista nossas aulas e Lives no Youtube
                     </ul>
-                    <!-- <a href="#cadastro" class="botao">Quero os PDF's</a> -->
+                    
                 </div>
-                <!-- <div class="box-preco">
-                    <div class="aviso-telegram">
-                        <p>EM BREVE</p>
-
-                        <div class="box-valores">
-                            <div class="preco">
-                                <p>tudo isso por apenas</p>
-                                <p>12x de</p>
-                                <h2>R$00,00</h2>
-                            </div>
-                            <a href="#">link da plataforma</a>
-                            <p>nossos cursos estão hospedados na plataforma...</p>
-                        </div>
-                        
-                    </div>
-                </div> -->
+                
             </div>
 
 
-        </section>
+        </section> -->
 
         <section id="funcionamento" class="limitador">
 
-            <h1>Funcionamento das aulas</h1>
+            <h1>Funcionamento do curso</h1>
             
             <div class="box-funcionamento">
                 <div class="funcionamento-item">
@@ -159,7 +153,7 @@
                     <div class="funcionamento-imagem">
                         <img src="imagens/aula-cor.png" alt="imagem genérica*"></div>
                     <div class="funcionamento-descricao">
-                        <p>Assista quando e onde quiser, materiais de apoio no canal do telegram.</p>
+                        <p>Assista quando e onde quiser, espaço exclusivo para tirar duvidas.</p>
                     </div>
                 </div>
     
@@ -176,16 +170,16 @@
             </div>
         </section>
 
-        <section id="videos" class="limitador">
+        <!-- <section id="videos" class="limitador">
             <h2>Aulas Gratuitas</h2>
             <div class="box-video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/go8vTigeOp0?si=j5Col_YJOUCUM-iV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
             </div>
             <a class="botao" href="https://www.youtube.com/@professorivomarcos" target="_blank">Inscreva-se no canal</a>
-        </section>
+        </section> -->
 
-        <section id="veja-mais" class="limitador">
+        <!-- <section id="veja-mais" class="limitador">
                          
             <div class="contato-form">
 
@@ -201,7 +195,7 @@
 
                 
             </div>
-        </section>
+        </section> -->
 
         <section id="social" class="limitador">
             <div class="social">
@@ -257,7 +251,7 @@
 
     <footer id="rodape">
         <div class="rodape">
-            <div class="menu-rodape">
+            <!-- <div class="menu-rodape">
                 <div class="menu-links">
                     <a href="#sobre">sobre</a>
                     <a href="#funcionamento">como é</a>
@@ -269,7 +263,7 @@
                     <a href="#videos">vídeos</a>
                     <a href="#veja-mais">veja mais</a>
                 </div>
-            </div>
+            </div> -->
 
             <div class="assinatura">
                 <p><span>professor ivo marcos - 2024</span><br>
