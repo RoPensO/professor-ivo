@@ -697,16 +697,18 @@ footer {
     .limitador {
         width: 425px;
     }
+    #banner {
+        width: 100%;
+    }
+    }
     .banner {
         flex-direction: column-reverse;
-        width: 425px;
     }
     .banner-titulo {
         width: 100%;
     }
-    .banner-foto {
+    .banner-foto, .banner-titulo {
         width: 100%;
-        
     }
     .formulario-social {
         width: 100%;
@@ -746,6 +748,7 @@ footer {
     }
     .funcionamento-item {
         width: 100%;
+        margin: 0;
     }
     .separador {
         position: relative;
