@@ -228,7 +228,7 @@ form label p {
 }
 .selo-desconto {
     top: -30px;
-    right: 0px;
+    right: 0%;
     position: absolute;
     height: 150px;
     width: 150px;
@@ -661,76 +661,103 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .menu-links a {
-        margin: auto;
-        padding: 50px 0;
+
+    .limitador {
+        width: 768px;
     }
     main {
-        width: 768px;
-        padding: 0px 5px;
-    }
-    .descricao {
+        padding: 10px;
         width: 100%;
-        flex-direction: column;
     }
-    #sobre {
-        justify-content: center;
-    }
-    .bloco-descricao {
-        width: 100%;
-        padding: 0;
-    }
-    .bloco-foto {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    .bloco-foto img {
-        width: 40%;
 
+    .selo-desconto {
+        top: -40%;
+        right: 50%;
     }
+
     #funcionamento {
-        width: 768px;
+        width: 100%;
     }
-
-    .box-funcionamento, .social-links {
+    .box-funcionamento {
+        width: 100%;
         flex-wrap: wrap;
     }
-    .social-links {
-        margin: 20px 0;
+
+    .formulario-social {
+        width: 60%;
     }
     #social {
-        flex-direction: column;
         align-items: center;
+        flex-direction: column-reverse;
     }
-    .social {
-        width: 100%;
-    }
-    .formulario-social {
-        width: 70%;
-    }
+
 }
 
 @media (max-width: 425px) {
-    main {
-        width: 540px;
-        padding: 0px 5px;
-    }
-    .pre-banner{
-        padding: 10px;
-    }
-    .pre-banner p {
-        padding: 30px;
+    .limitador {
+        width: 425px;
     }
     .banner {
-        flex-direction: column-reverse
+        flex-direction: column-reverse;
+        width: 425px;
     }
-    .banner-foto, .banner-titulo {
+    .banner-titulo {
         width: 100%;
     }
-    .box-descricao ul li {
-        width: auto;
+    .banner-foto {
+        width: 100%;
+        
     }
-    .funcionamento {
-        width: auto;
+    .formulario-social {
+        width: 100%;
+    }
+    #social {
+        width: 100%;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .botao-flutuante {
+        display: none;
+    }
+    .separador {
+        width: 100%;
+    }
+    .social-links {
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 30px 0;
+    }
+    .box-funcionamento {
+        flex-wrap: wrap;
+    }
+    .selo-desconto {
+        top: -10%;
+        left: 1%;
+    }
+    .frase-damasco h1 {
+        font-size: 35px;
+    }
+    #funcionamento h1 {
+        padding: 0px 20px;
+    }
+    .box-funcionamento {
+        width: 100%;
+        flex-direction: column;
+    }
+    .funcionamento-item {
+        width: 100%;
+    }
+    .separador {
+        position: relative;
+        left: 5px;
+        line-height: 35px;
+        background-color: var(--azul);
+        border-radius: 20px;
+        padding: 1px 10px;
+        color: white;
+        filter: drop-shadow(-7px 10px 0px var(--laranja));
+    }
+    .separador h1 {
+        font-size: 30px;
     }
 }
