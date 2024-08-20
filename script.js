@@ -12,8 +12,7 @@ function updateCountdown() {
 
     countdownEl.innerHTML = `${minutes}:${seconds}`;
     time--;
-
-    time--;
+    
     time = time < 0 ? 0 : time;
 
 }
