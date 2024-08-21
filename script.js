@@ -16,3 +16,12 @@ function updateCountdown() {
     time = time < 0 ? 0 : time;
 
 }
+
+setTimeout(function(){
+
+    var a = document.getElementById("timer");
+    
+    a.style="display:none"
+    
+    
+    }, 600000);

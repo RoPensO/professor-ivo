@@ -770,7 +770,7 @@ footer {
 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 560px) {
     .pre-banner {
         background-position: -130px 0;
     }
